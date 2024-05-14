@@ -28,6 +28,13 @@ body{
     align-items: center;
 }
 
+button:hover{
+    cursor: pointer;
+    opacity: 90%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
 .grid{
     display: grid;
 
@@ -67,12 +74,9 @@ body{
 }
 
 .actions{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .actions i{
@@ -80,33 +84,91 @@ body{
 }
 
 .actions button{
-    width: 100%;
-    height: 100%;
+    margin: 0px;
     background-color: var(--dark-gray);
     color: var(--light-gray);
-    font-size: 15px;
-    font-family: inherit;
-    border: 1px solid var(--light-gray);
-    border-radius: 5px;
+    font: inherit;
 }
 
-.actions .hidden{
-    display: none;
+.actions-button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+
+    border: 0.5px solid var(--light-gray);
+    border-radius: 10px;
 }
 
-.actions .items{
-    position: absolute;
+.hidden{
+    /* display: none; */
     z-index: 10;
-    border: 1px solid var(--light-gray);
-    border-radius: 5px;
+}
+
+.hidden button{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    margin: 0;
+}
+
+.reset-button{
+    top: 50px;
+}
+
+.new-round-button{
+    top: 100px;
 }
 
 .square{
     background-color: var(--gray);
+
+    box-shadow: 
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    border: 1px solid rgba(211, 211, 211, 0.4);
+    border-radius: 10px;
+}
+
+.square:hover{
+    cursor: pointer;
+    opacity: 70%;
 }
 
 .score{
+    box-shadow: 
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
+    border: 1px solid rgba(211, 211, 211, 0.4);
+    border-radius: 10px;
+
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.first-p{
+    font-weight: 600;
+}
+
+.second-p{
+    font-weight: 400;
 }
 
 .score-1{
