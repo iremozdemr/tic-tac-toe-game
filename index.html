@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3bfd3ce9e5.js" crossorigin="anonymous"></script>
     <title>tic-tac-toe game</title>
 </head>
 <body>
     <main>
         <div class="grid">
-            <div class="turn"></div>
-            <div class="actions"></div>
+            <!-- player info -->
+            <div class="turn">
+                <i class="fa-solid fa-x turquoise"></i>
+
+                <p>player 1, you're up</p>
+            </div>
+
+            <!-- menu -->
+            <div class="actions">
+                <button class="actions-button" data-id="actions-button">
+                    actions
+
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                
+                <button class="items hidden" data-id="reset-button">reset</button>
+                <button class="items hidden" data-id="new-round-button">new round</button>
+            </div>
 
             <!-- game board -->
             <div id="1" class="square" data-id="square"></div>

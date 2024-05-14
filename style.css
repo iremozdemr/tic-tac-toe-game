@@ -49,9 +49,56 @@ body{
 }
 
 .turn{
-    background-color: red;
     grid-column-start: 1;
     grid-column-end: 3;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: var(--turquoise);
+}
+
+.turn i{
+    animation: 0.6s ease-in-out;
+}
+
+.turn p{
+    animation: 0.6s ease-in-out;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    position: relative;
+}
+
+.actions i{
+    color: var(--light-gray);
+}
+
+.actions button{
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    font-size: 15px;
+    font-family: inherit;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+
+.actions .hidden{
+    display: none;
+}
+
+.actions .items{
+    position: absolute;
+    z-index: 10;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
 }
 
 .square{
