@@ -134,6 +134,10 @@ button:hover{
 
     border: 1px solid rgba(211, 211, 211, 0.4);
     border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .square:hover{
@@ -197,4 +201,20 @@ footer p{
   
 footer a{
     color: var(--yellow);
+}
+
+.x-style {
+    color: #3cc4bf; /* X rengi */
+    font-size: 2em; /* X boyutu */
+    font-weight: bold; /* X kalınlığı */
+    text-align: center; /* X hizalaması */
+    line-height: 2em; /* X yüksekliği */
+}
+
+.o-style {
+    color: #f2b147; /* O rengi */
+    font-size: 2em; /* O boyutu */
+    font-weight: bold; /* O kalınlığı */
+    text-align: center; /* O hizalaması */
+    line-height: 2em; /* O yüksekliği */
 }
