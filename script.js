@@ -163,6 +163,17 @@ function checkWinner(){
         currentWinner = 2;
     }
 
+    let count = 0;
+    for(let i=0; i<9; i++){
+        if(board[i] != 0){
+            count++;
+        }
+    }
+    if(count == 9 && currentWinner==0){
+        tiesCount++;
+        ties.innerHTML = tiesCount;
+    }
+
     if(currentWinner == 1){
         p1Count++;
         p1Wins.innerHTML = p1Count + " wins";
